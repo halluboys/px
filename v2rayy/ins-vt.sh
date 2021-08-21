@@ -16,7 +16,7 @@ date
 mkdir -p /etc/trojan/
 touch /etc/trojan/akun.conf
 # install v2ray
-wget https://raw.githubusercontent.com/halluboys/px/main/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/McDull-GitHub/trojan-go-quickstart/main/quickstart.sh)"
 mkdir /root/.acme.sh
@@ -500,6 +500,7 @@ wget -O del-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-w
 #wget -O del-vless "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-vless.sh"
 wget -O del-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-tr.sh"
 wget -O cek-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cek-ws.sh"
+wget -O port-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/port-ws.sh"
 #wget -O cek-vless "https://raw.githubusercontent.com/halluboys/px/main/cek-vless.sh"
 wget -O cek-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cek-tr.sh"
 wget -O port-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/port-tr.sh"
@@ -518,7 +519,7 @@ chmod +x del-ws
 chmod +x del-vless
 chmod +x del-tr
 chmod +x cek-ws
-chmod +x cek-vless
+chmod +x port-ws
 chmod +x cek-tr
 chmod +x renew-ws
 chmod +x port-tr
