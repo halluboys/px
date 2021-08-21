@@ -5,7 +5,7 @@
    >>> Service & Port
    - V2RAY Vmess TLS         : 443
    - V2RAY Vmess None TLS    : 80
-   - TrojanGo.               : 443
+   - TrojanGo                : 2096
 
    >>> Server Information & Other Features
    - Timezone                : Asia/Jakarta (GMT +7)
