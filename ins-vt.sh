@@ -508,17 +508,17 @@ wget -O menu "https://raw.githubusercontent.com/halluboys/px/main/menu.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/cert.sh"
 
 chmod +x add-ws
-#chmod +x add-vless
-#chmod +x add-tr
+chmod +x add-vless
+chmod +x add-tr
 chmod +x del-ws
-#chmod +x del-vless
-#chmod +x del-tr
+chmod +x del-vless
+chmod +x del-tr
 chmod +x cek-ws
-#chmod +x cek-vless
-#chmod +x cek-tr
+chmod +x cek-vless
+chmod +x cek-tr
 chmod +x renew-ws
-#cmod +x renew-vless
-#chmod +x renew-tr
+chmod +x renew-vless
+chmod +x renew-tr
 chmod +x v2raay
 chmod +x menu
 chmod +x certv2ray
