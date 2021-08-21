@@ -12,26 +12,10 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	echo -e "   \e[032;1mCity:\e[0m $CITY" | lolcat
 	echo -e "   \e[033;1mIPVPS:\e[0m $IPVPS" | lolcat
 echo -e  ""
-echo -e  "   -------------------------MENU OPTIONS------------------------" | lolcat
-echo -e   "   1\e[1;33m)\e[m Panel V2Ray" | lolcat
-echo -e   "   2\e[1;33m)\e[m Create Certificate" | lolcat
-echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
-echo -e   "   x)   Exit" | lolcat
-echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
-echo -e   ""
-read -p "     Select From Options [1-2 or x] :  " menu | lolcat
-echo -e   ""
-case $menu in
-1)
-v2raay
-;;
-2)
-certv2ray
-;;
-x)
-exit
-;;
-*)
-echo  "Please enter an correct number"
-;;
-esac
+echo -e "=============================-VMESS-===========================" | lolcat
+echo -e "* add-ws       : Create V2RAY Vmess Websocket Account"
+echo -e "* del-ws       : Deleting V2RAY Vmess Websocket Account"
+echo -e "* renew-ws     : Extending Vmess Account Active Life"
+echo -e "* cek-ws       : Check User Login V2RAY"
+echo -e "* certv2ray    : Renew Certificate V2RAY Account"
+echo -e ""
