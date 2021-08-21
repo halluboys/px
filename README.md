@@ -30,4 +30,4 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 - Trojan
 - TrojanGo
 
-[x] ~~`Gak ijin VPS lu meninggoy !`~~
+`[x]` ~~`Gak ijin VPS lu meninggoy !`~~
