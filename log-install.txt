@@ -6,7 +6,8 @@
    - V2RAY Vmess TLS         : 443
    - V2RAY Vmess None TLS    : 80
    - TrojanGo                : 2096
-
+   - L2TP/IPSEC VPN          : 1701
+   - PPTP VPN                : 1732
    >>> Server Information & Other Features
    - Timezone                : Asia/Jakarta (GMT +7)
    - Fail2Ban                : [ON]
