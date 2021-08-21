@@ -121,24 +121,6 @@ wget https://raw.githubusercontent.com/halluboys/px/main/cf.sh && chmod +x cf.sh
 wget https://raw.githubusercontent.com/halluboys/px/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 
 rm -f /root/ins-vt.sh
-
-cat <<EOF> /etc/systemd/system/autosett.service
-[Unit]
-Description=autosetting
-Documentation=https://xzvnct.my.id
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash /etc/set.sh
-RemainAfterExit=yes
-
-[Install]
-WantedBy=multi-user.target
-EOF
-systemctl daemon-reload
-systemctl enable autosett
-wget -O /etc/set.sh "https://raw.githubusercontent.com/halluboys/px/main/set.sh"
-chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 clear
