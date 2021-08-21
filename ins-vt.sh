@@ -491,6 +491,7 @@ systemctl start v2ray@vnone.service
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
+wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/cert.sh"
 wget -O add-ws "https://raw.githubusercontent.com/halluboys/px/main/add-ws.sh"
 #wget -O add-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/add-vless.sh"
 #wget -O add-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/add-tr.sh"
@@ -503,10 +504,10 @@ wget -O cek-ws "https://raw.githubusercontent.com/halluboys/px/main/cek-ws.sh"
 wget -O renew-ws "https://raw.githubusercontent.com/halluboys/px/main/renew-ws.sh"
 #wget -O renew-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/renew-vless.sh"
 #wget -O renew-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/renew-tr.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/cert.sh"
-wget -O v2ray "https://raw.githubusercontent.com/halluboys/px/main/v2raay.sh"
+wget -O v2raay "https://raw.githubusercontent.com/halluboys/px/main/v2raay.sh"
 wget -O menu "https://raw.githubusercontent.com/halluboys/px/main/menu.sh"
 
+chmod +x certv2ray
 chmod +x add-ws
 #chmod +x add-vless
 #chmod +x add-tr
@@ -519,7 +520,6 @@ chmod +x cek-ws
 chmod +x renew-ws
 #cmod +x renew-vless
 #chmod +x renew-tr
-chmod +x certv2ray
 chmod +x v2raay
 chmod +x menu
 cd
