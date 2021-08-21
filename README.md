@@ -5,6 +5,7 @@
 [`Telegram`](https://t.me/xzvnct)
 
 - `CARA INSTALL`
+
 `1).`
 ```shell
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
