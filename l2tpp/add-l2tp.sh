@@ -44,7 +44,7 @@ cat <<EOF
 L2TP/Ipsec Psk VPN Acc Information
 ====================================
 Server IP    : $PUBLIC_IP
-IPsec PSK    : myvpn
+IPsec PSK    : xzvnct
 Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired ON   : $exp
