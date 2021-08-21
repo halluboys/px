@@ -466,12 +466,12 @@ cat <<EOF > /etc/trojan/uuid.txt
 $uuid
 EOF
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2087 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8880 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2087 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8880 -j ACCEPT
@@ -482,32 +482,31 @@ netfilter-persistent reload
 systemctl daemon-reload
 systemctl enable v2ray@none.service
 systemctl start v2ray@none.service
-#systemctl enable v2ray@vless.service
-#systemctl start v2ray@vlessservice
+systemctl enable v2ray@vless.service
+systemctl start v2ray@vlessservice
 systemctl enable v2ray@vnone.service
 systemctl start v2ray@vnone.service
-#systemctl restart trojan
-#systemctl enable trojan
+systemctl restart trojan
+systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/cert.sh"
 wget -O add-ws "https://raw.githubusercontent.com/halluboys/px/main/add-ws.sh"
-#wget -O add-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/add-vless.sh"
-#wget -O add-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/add-tr.sh"
+wget -O add-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/add-tr.sh"
 wget -O del-ws "https://raw.githubusercontent.com/halluboys/px/main/del-ws.sh"
-#wget -O del-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/del-vless.sh"
-#wget -O del-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/del-tr.sh"
+wget -O del-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/del-vless.sh"
+wget -O del-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/del-tr.sh"
 wget -O cek-ws "https://raw.githubusercontent.com/halluboys/px/main/cek-ws.sh"
-#wget -O cek-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/cek-vless.sh"
-#wget -O cek-tr "https://raw.githubusercontent.com/halluboys/xzvnct/cek-tr.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/cek-vless.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/halluboys/xzvnct/cek-tr.sh"
 wget -O renew-ws "https://raw.githubusercontent.com/halluboys/px/main/renew-ws.sh"
-#wget -O renew-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/renew-vless.sh"
-#wget -O renew-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/renew-tr.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/halluboys/xzvnct/main/renew-vless.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/halluboys/xzvnct/main/renew-tr.sh"
 wget -O v2raay "https://raw.githubusercontent.com/halluboys/px/main/v2raay.sh"
 wget -O menu "https://raw.githubusercontent.com/halluboys/px/main/menu.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/cert.sh"
 
-chmod +x certv2ray
 chmod +x add-ws
 #chmod +x add-vless
 #chmod +x add-tr
@@ -522,6 +521,8 @@ chmod +x renew-ws
 #chmod +x renew-tr
 chmod +x v2raay
 chmod +x menu
+chmod +x certv2ray
+certv2ray
 cd
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
