@@ -16,6 +16,10 @@ echo "Script Already Installed"
 exit 0
 fi
 
+# simple password minimal
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/halluboys/px/main/password"
+chmod +x /etc/pam.d/common-password
+
 # Edit file /etc/systemd/system/rc-local.service
 cat > /etc/systemd/system/rc-local.service <<-END
 [Unit]
