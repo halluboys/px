@@ -18,4 +18,6 @@ echo -e "* del-ws       : Deleting V2RAY Vmess Websocket Account"
 echo -e "* renew-ws     : Extending Vmess Account Active Life"
 echo -e "* cek-ws       : Check User Login V2RAY"
 echo -e "* certv2ray    : Renew Certificate V2RAY Account"
+echo -e "===========================-Trojan-Go-=========================" | lolcat
+echo -e "* add-trgo      : Create TrojanGo Account"
 echo -e ""
