@@ -5,7 +5,7 @@
    >>> Service & Port
    - V2RAY Vmess TLS         : 443
    - V2RAY Vmess None TLS    : 80
-   - TrojanGo                : 2096
+   - Trojan                  : 2087
    - L2TP/IPSEC VPN          : 1701
    - PPTP VPN                : 1732
    >>> Server Information & Other Features
