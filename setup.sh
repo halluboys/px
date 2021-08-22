@@ -119,8 +119,11 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/halluboys/px/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+#install L2TP/PPTP
+wget https://raw.githubusercontent.com/halluboys/px/main/l2tpp/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 
 rm -f /root/ins-vt.sh
+rm -f /root/ipsec.sh
 history -c
 echo "1.2" > /home/ver
 clear
