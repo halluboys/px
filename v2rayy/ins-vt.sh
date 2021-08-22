@@ -532,6 +532,7 @@ chmod +x menu
 chmod +x xp-ws
 chmod +x xp+tr
 chmod +x cf
+chmod +x bannerku
 chmod +x certv2ray
 certv2ray
 cd
