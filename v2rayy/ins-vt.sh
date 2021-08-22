@@ -511,6 +511,7 @@ wget -O trojaan "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/troj
 wget -O v2raay "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/v2raay.sh"
 wget -O menu "https://raw.githubusercontent.com/halluboys/px/main/menu.sh"
 wget -O cf "https://raw.githubusercontent.com/halluboys/px/main/cf.sh"
+wget -O bannerku "https://raw.githubusercontent.com/halluboys/px/main/bannerku"
 wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cert.sh"
 
 chmod +x add-ws
