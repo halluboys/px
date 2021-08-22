@@ -18,11 +18,15 @@ echo -e "* del-ws       : Deleting V2RAY Vmess Websocket Account"
 echo -e "* renew-ws     : Extending Vmess Account Active Life"
 echo -e "* cek-ws       : Check User Login V2RAY"
 echo -e "* certv2ray    : Renew Certificate V2RAY Account"
+echo -e "=============================-Trojan-==========================" | lolcat
+echo -e "* add-tr       : Create Trojan Account"
+echo -e "* del-tr       : Deleting Trojan Account"
+echo -e "* renew-tr     : Extending Trojan Account Active Life"
+echo -e "* cek-tr       : Check User Login Trojan"
 echo -e "=============================-L2TP-============================" | lolcat
 echo -e "* add-l2tp     : Creating L2TP Account"
 echo -e "* del-l2tp     : Deleting L2TP Account"
 echo -e "* renew-l2tp   : Extending L2TP Account Active Life"
-echo -e ""
 echo -e "=============================-PPTP-============================" | lolcat
 echo -e "* add-pptp     : Create Account PPTP"
 echo -e "* del-pptp     : Delete PPTP Account"
