@@ -7,7 +7,7 @@
     "log_level": 1,
     "log_file": "/var/log/trojan-go.log",
     "password": [
-        "f9d08286-b4e7-438d-b40e-4ff402be4503"
+        "$uuid"
     ],
   "disable_http_check": false,
   "udp_timeout": 60,
@@ -20,7 +20,7 @@
     "cipher": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
     "curves": "",
     "prefer_server_cipher": true,
-    "sni": "sw8a.xzvnct.my.id",
+    "sni": "$domain",
     "alpn": [
       "http/1.1"
     ],
@@ -53,8 +53,8 @@
   },
   "websocket": {
     "enabled": true,
-    "path": "/xzvnct",
-    "host": "sw8a.xzvnct.my.id"
+    "path": "/bokir_tampan",
+    "host": "$domain"
   },
   "shadowsocks": {
     "enabled": false,
