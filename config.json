@@ -7,7 +7,7 @@
     "log_level": 1,
     "log_file": "/var/log/trojan-go.log",
     "password": [
-        "$uuid"
+        "16121997"
     ],
   "disable_http_check": false,
   "udp_timeout": 60,
