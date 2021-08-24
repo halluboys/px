@@ -493,19 +493,19 @@ systemctl enable v2ray
 cd /usr/bin
 wget -O add-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/add-ws.sh"
 wget -O xp-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/xp-ws.sh"
-#wget -O add-vless "https://raw.githubusercontent.com/halluboys/px/main/v2raayy/add-vless.sh"
+wget -O add-vless "https://raw.githubusercontent.com/halluboys/px/main/v2raayy/add-vless.sh"
 wget -O add-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/add-tr.sh"
 wget -O xp-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/xp-ws.sh"
 wget -O del-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-ws.sh"
-#wget -O del-vless "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-vless.sh"
+wget -O del-vless "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-vless.sh"
 wget -O del-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/del-tr.sh"
 wget -O cek-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cek-ws.sh"
 wget -O port-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/port-ws.sh"
-#wget -O cek-vless "https://raw.githubusercontent.com/halluboys/px/main/cek-vless.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/halluboys/px/main/cek-vless.sh"
 wget -O cek-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cek-tr.sh"
 wget -O port-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/port-tr.sh"
 wget -O renew-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/renew-ws.sh"
-#wget -O renew-vless "https://raw.githubusercontent.com/halluboys/px/main/renew-vless.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/halluboys/px/main/renew-vless.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/renew-tr.sh"
 wget -O trojaan "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/trojaan.sh"
 wget -O v2raay "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/v2raay.sh"
@@ -523,6 +523,7 @@ chmod +x del-tr
 chmod +x cek-ws
 chmod +x port-ws
 chmod +x cek-tr
+chmod +x cek-vless
 chmod +x renew-ws
 chmod +x port-tr
 chmod +x renew-tr
