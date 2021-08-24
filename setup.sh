@@ -127,7 +127,7 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/halluboys/px/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
