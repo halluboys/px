@@ -11,7 +11,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.me/ip);
-IZIN=$( curl https://raw.githubusercontent.com/halluboys/ipvps/main/ip | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/halluboys/xzvnct/main/ipvps/ip | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -218,7 +218,7 @@ echo ""  | tee -a log-install.txt
 echo "   - Dev/Main                : haluboys"  | tee -a log-install.txt
 echo "   - Telegram                : T.me/xzvnct"  | tee -a log-install.txt
 echo "   - Instagram               :  "  | tee -a log-install.txt
-echo "   - Whatsapp                : "  | tee -a log-install.txt
+echo "   - Whatsapp                :  "  | tee -a log-install.txt
 echo "   - Facebook                : https://www.facebook.com" | tee -a log-install.txt
 echo "------------------Script Created By HALUBOY-----------------" | tee -a log-install.txt
 echo ""
