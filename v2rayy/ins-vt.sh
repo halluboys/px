@@ -18,7 +18,7 @@ touch /etc/trojan/akun.conf
 # install v2ray
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
-bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)"
+bash -c "$(wget -O- https://raw.githubusercontent.com/McDull-GitHub/trojan-go-quickstart/main/quickstart.sh)"
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
