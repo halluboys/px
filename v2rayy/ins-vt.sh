@@ -537,6 +537,7 @@ chmod +x xp-vless
 chmod +x cf
 chmod +x bannerku
 chmod +x certv2ray
+certv2ray
 cd
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
