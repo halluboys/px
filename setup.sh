@@ -12,7 +12,7 @@ green='\e[0;32m'
 NC='\e[0m'
 IP=$(wget -qO- ifconfig.me/ip);
 IZIN=$( curl https://raw.githubusercontent.com/halluboys/ipvps/main/ip | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
+if [ $IP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
 echo -e "${red}Permission Denied!${NC}";
