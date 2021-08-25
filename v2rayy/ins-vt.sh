@@ -504,12 +504,13 @@ wget -O port-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/port
 wget -O cek-vless "https://raw.githubusercontent.com/halluboys/px/main/cek-vless.sh"
 wget -O cek-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cek-tr.sh"
 wget -O port-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/port-tr.sh"
+wget -O xp-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/xp-tr.sh"
 wget -O renew-ws "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/renew-ws.sh"
 wget -O renew-vless "https://raw.githubusercontent.com/halluboys/px/main/renew-vless.sh"
+wget -O xp-vless "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/xp-vless.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/renew-tr.sh"
 wget -O trojaan "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/trojaan.sh"
 wget -O v2raay "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/v2raay.sh"
-wget -O menu "https://raw.githubusercontent.com/halluboys/px/main/menu.sh"
 wget -O cf "https://raw.githubusercontent.com/halluboys/px/main/cf.sh"
 wget -O bannerku "https://raw.githubusercontent.com/halluboys/px/main/bannerku"
 wget -O certv2ray "https://raw.githubusercontent.com/halluboys/px/main/v2rayy/cert.sh"
@@ -532,10 +533,13 @@ chmod +x v2raay
 chmod +x menu
 chmod +x xp-ws
 chmod +x xp-tr
+chmod +x xp-vless
 chmod +x cf
 chmod +x bannerku
 chmod +x certv2ray
 cd
-sudo certv2ray
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
+echo "0 0 * * * root xp-ws" >> /etc/crontab
+echo "0 0 * * * root xp-tr" >> /etc/crontab
+echo "0 0 * * * root xp-vless" >> /etc/crontab
