@@ -28,18 +28,18 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/halluboys/px/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #install v2ray
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install wg
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install L2TP
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && apt update && apt install dos2unix && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 rm -f /root/ssh-vpn.sh
