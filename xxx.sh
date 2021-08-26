@@ -49,3 +49,4 @@ systemctl start v2ray@none
 echo Done
 sleep 0.5 
 neofetch
+mv /root/domain /etc/v2ray
