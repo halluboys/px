@@ -27,7 +27,7 @@ fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install cf
-wget https://raw.githubusercontent.com/halluboys/px/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/halluboys/px/main/certy.sh && chmod +x certy.sh && ./certy.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #install sstp
@@ -44,15 +44,16 @@ wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
-rm -f /root/ssh-vpn.sh
-rm -f /root/sstp.sh
-rm -f /root/wg.sh
-rm -f /root/ss.sh
-rm -f /root/ssr.sh
-rm -f /root/ins-vt.sh
-rm -f /root/ipsec.sh
-rm -f /root/set-br.sh
-rm -f /root/ins-trojango.sh
+rm -f certy.sh
+rm -f ssh-vpn.sh
+rm -f sstp.sh
+rm -f wg.sh
+rm -f ss.sh
+rm -f ssr.sh
+rm -f ins-vt.sh
+rm -f ipsec.sh
+rm -f set-br.sh
+rm -f ins-trojango.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
