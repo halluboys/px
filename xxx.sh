@@ -41,12 +41,11 @@ echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
 rm -f /root/cf.sh
 cd
-source /var/lib/premium-script/ipvps.conf
-domain=$IP
+domain=$SUB_DOMAIN
 systemctl stop v2ray
 systemctl stop v2ray@none
-/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
-~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
+/root/.acme.sh/acme.sh --issue -d $SUB_DOMAIN --standalone -k ec-256
+~/.acme.sh/acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 systemctl start v2ray
 systemctl start v2ray@none
 echo Done
