@@ -45,7 +45,7 @@ wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +
 rm -f /root/go.sh
 systemctl stop v2ray
 systemctl stop v2ray@none
-#install certificate
+#edit certificate
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
