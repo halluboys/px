@@ -40,8 +40,6 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
 rm -f /root/cf.sh
-cd
-domain=$SUB_DOMAIN
 systemctl stop v2ray
 systemctl stop v2ray@none
 /root/.acme.sh/acme.sh --issue -d $SUB_DOMAIN --standalone -k ec-256
