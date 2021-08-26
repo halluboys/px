@@ -1,4 +1,5 @@
 #!/bin/bash
+domain=$(cat /var/lib/premium-script/ipvps.conf)
 apt install iptables iptables-persistent -y
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
 apt install socat cron bash-completion ntpdate -y
@@ -529,7 +530,7 @@ chmod +x cf
 chmod +x bannerku
 chmod +x certv2ray
 cd
-rm -f ins-vt.sh
+rm -rf ins-vt.sh
 echo "0 0 * * * root xp-ws" >> /etc/crontab
 echo "0 0 * * * root xp-tr" >> /etc/crontab
 echo "0 0 * * * root xp-vless" >> /etc/crontab
