@@ -26,6 +26,8 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
+# install v2ray
+wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 #install cf
 wget https://raw.githubusercontent.com/halluboys/px/main/certy.sh && chmod +x certy.sh && ./certy.sh
 #install ssh ovpn
