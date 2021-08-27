@@ -1,9 +1,9 @@
-# AUTOSCRIPT PREMIUM
+# AUTOSCRIPT #FREE
 [![Go Report Card](https://goreportcard.com/badge/github.com/p4gefau1t/trojan-go)](https://goreportcard.com/report/github.com/p4gefau1t/trojan-go) [![Downloads](https://img.shields.io/github/downloads/p4gefau1t/trojan-go/total?label=downloads&logo=github&style=flat-square)](https://img.shields.io/github/downloads/p4gefau1t/trojan-go/total?label=downloads&logo=github&style=flat-square) ![GoDoc](https://godoc.org/github.com/LiamHaworth/go-tproxy?status.svg)
 
 - `IJIN DULU BANGJAGO !`
 [`Telegram`](https://t.me/xzvnct)
-
+- ~~`Gak ijin VPS lu meninggoy !`~~
 - `CARA INSTALL`
 
 ```shell
@@ -33,5 +33,3 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 - V2RAY Vless None TLS    
 - Trojan
 - TrojanGo
-
-`[x]` ~~`Gak ijin VPS lu meninggoy !`~~
