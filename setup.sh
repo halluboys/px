@@ -26,6 +26,8 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
+#install v2ray
+wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 #install cf
 wget https://raw.githubusercontent.com/halluboys/px/main/certy.sh && chmod +x certy.sh && ./certy.sh
 #install ssh ovpn
@@ -44,6 +46,7 @@ wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
+rm -f go.sh
 rm -f certy.sh
 rm -f ssh-vpn.sh
 rm -f sstp.sh
