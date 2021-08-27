@@ -45,7 +45,7 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/halluboys/
 /etc/init.d/nginx restart
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-install go
+#install go
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 #install cf
 wget https://raw.githubusercontent.com/halluboys/px/main/certy.sh && chmod +x certy.sh && sudo ./certy.sh
