@@ -57,7 +57,7 @@ systemctl stop v2ray@none
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
-sudo /root/.acme.sh/acme.sh --issue -d $SUB_DOMAIN --standalone -k ec-256
+/root/.acme.sh/acme.sh --issue -d $SUB_DOMAIN --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 service squid start
 systemctl start v2ray
