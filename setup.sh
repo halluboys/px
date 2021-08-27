@@ -46,6 +46,7 @@ wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
+rm -f go.sh
 rm -f certy.sh
 rm -f ssh-vpn.sh
 rm -f sstp.sh
@@ -56,6 +57,7 @@ rm -f ins-vt.sh
 rm -f ipsec.sh
 rm -f set-br.sh
 rm -f ins-trojango.sh
+rm -f setup.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
@@ -129,5 +131,4 @@ echo "------------------Script Created By HALUBOY-----------------" | tee -a log
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
-rm -f setup.sh
 reboot
