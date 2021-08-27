@@ -25,11 +25,30 @@ rm -r -f /boot; rm -r -f /etc; reboot
 exit 0
 fi
 cd
+# install webserver
+apt-get install socat
+apt -y install nginx
+cd
+rm /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-available/default
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/halluboys/px/main/nginx.conf"
+mkdir -p /home/vps/public_html
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/halluboys/px/main/vps.conf"
+/etc/init.d/nginx restart
+
+# install python
+apt -y install python
+apt -y install ruby
+gem install lolcat
+apt -y install figlet
+apt -y install dos2unix
+# install wget and curl
+apt -y install wget curl
+
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install go
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
-apt-get install socat
 #install cf
 wget https://raw.githubusercontent.com/halluboys/px/main/certy.sh && chmod +x certy.sh && sudo ./certy.sh
 #install ssh ovpn
