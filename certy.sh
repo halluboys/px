@@ -53,6 +53,7 @@ echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
 systemctl stop v2ray
 systemctl stop v2ray@none
+sudo apt-get install socat
 #add certificate
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
