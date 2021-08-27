@@ -26,7 +26,7 @@ exit 0
 fi
 cd
 # install webserver
-apt-get install socat
+sudo apt install socat
 apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
