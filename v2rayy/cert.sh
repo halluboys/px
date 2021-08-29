@@ -7,7 +7,7 @@ echo "Checking VPS"
 echo start
 sleep 0.5
 source /var/lib/premium-script/ipvps.conf
-domain=$IP
+domain=$(cat /root/domain)
 systemctl stop v2ray
 systemctl stop v2ray@none
 /root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
