@@ -1,5 +1,5 @@
 #!/bin/bash
-domain=$(cat /etc/v2ray/domain)
+domain=$(cat /root/domain)
 apt install iptables iptables-persistent -y
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
 apt install socat cron bash-completion ntpdate -y
@@ -529,6 +529,7 @@ chmod +x cf
 chmod +x certv2ray
 cd
 rm -rf ins-vt.sh
+mv /root/domain /etc/v2ray
 echo "0 0 * * * root xp-ws" >> /etc/crontab
 echo "0 0 * * * root xp-tr" >> /etc/crontab
 echo "0 0 * * * root xp-vless" >> /etc/crontab
