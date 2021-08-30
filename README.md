@@ -1,9 +1,11 @@
-# AUTOSCRIPT #FREE
+# AUTOSCRIPT PREMIUM #FREE
 [![Go Report Card](https://goreportcard.com/badge/github.com/p4gefau1t/trojan-go)](https://goreportcard.com/report/github.com/p4gefau1t/trojan-go) [![Downloads](https://img.shields.io/github/downloads/p4gefau1t/trojan-go/total?label=downloads&logo=github&style=flat-square)](https://img.shields.io/github/downloads/p4gefau1t/trojan-go/total?label=downloads&logo=github&style=flat-square) ![GoDoc](https://godoc.org/github.com/LiamHaworth/go-tproxy?status.svg)
 
 - `IJIN DULU BANGJAGO !`
 [`Telegram`](https://t.me/xzvnct)
+- `Kirim IPVPS ke Telegram !`
 - ~~`Gak ijin VPS lu meninggoy !`~~
+
 - `CARA INSTALL`
 
 ```shell
@@ -33,3 +35,11 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 - V2RAY Vless None TLS    
 - Trojan
 - TrojanGo
+
+
+`SERVICE MENU`
+![Screenshot_20210827-201008](https://user-images.githubusercontent.com/87511503/131221061-4ccc16ba-5fbe-4f27-8a01-966d888682e5.jpg)
+
+`SERVICE RUNNING`
+![Screenshot_20210827-225631](https://user-images.githubusercontent.com/87511503/131221045-ee78f854-d491-4467-8054-702d3a547d4c.jpg)
+
