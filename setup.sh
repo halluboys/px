@@ -55,22 +55,24 @@ wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/weleh.sh && chmod +x weleh.sh && screen -S weleh ./weleh.sh
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ohp.sh && chmod +x ohp.sh && screen -S ohp ./ohp.sh
 #install sstp
-#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ss+ssr
-#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/halluboys/xzvnct/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #install v2ray
 wget https://raw.githubusercontent.com/halluboys/px/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install wg
-#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/halluboys/xzvnct/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install L2TP
-#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 rm -f /root/go.sh
 rm -f /root/certy.sh
 rm -f /root/ssh-vpn.sh
+rm -f /root/weleh.sh
+rm -f /root/ohp.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
 rm -f /root/ss.sh
