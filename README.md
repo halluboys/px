@@ -7,7 +7,7 @@
 - ~~`Gak ijin VPS lu meninggoy !`~~
 
 - `CARA INSTALL`
-
+step 1
 ```shell
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
