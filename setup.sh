@@ -69,6 +69,8 @@ wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod 
 #install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 rm -f /root/go.sh
+rm -f /root/weleh.sh
+rm -f /root/ohp.sh
 rm -f /root/certy.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -152,7 +154,7 @@ echo "   - Facebook                : https://www.facebook.com" | tee -a log-inst
 echo "------------------Script Created By HALUBOY-----------------" | tee -a log-install.txt
 mv log-install.txt /root
 echo ""
+rm -f setup.sh
 echo " Reboot 15 Sec"
 sleep 15
-rm -f setup.sh
 reboot
