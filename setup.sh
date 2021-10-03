@@ -67,7 +67,7 @@ wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/ins-vt.sh && chm
 #wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-#wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
+wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 rm -f /root/go.sh
 rm -f /root/weleh.sh
 rm -f /root/ohp.sh
