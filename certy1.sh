@@ -18,9 +18,9 @@ exit 0
 fi
 clear
 apt install jq curl -y
-DOMAIN=xzvnct.my.id
+DOMAIN=halucok.ga
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.xzvnct.my.id
+SUB_DOMAIN=${sub}.halucok.ga
 CF_ID=hammysayang@gmail.com
 CF_KEY=e36b9f8a6f75dec07d86a93a3f115c9f1eda9
 set -euo pipefail
