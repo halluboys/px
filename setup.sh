@@ -156,5 +156,6 @@ mv log-install.txt /root
 echo ""
 rm -f setup.sh
 echo " Reboot 15 Sec"
+cat /usr/bin/bannerku | lolcat
 sleep 15
 reboot 
