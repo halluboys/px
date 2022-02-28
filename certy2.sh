@@ -59,7 +59,8 @@ wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/maste$
 chmod +x /root/.acme.sh/acme.sh 
 rm acme.sh
 cd .acme.sh
-echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"         sudo bash acme.sh --register-account -m hammysayang@gmail.com
+echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"
+ sudo bash acme.sh --register-account -m hammysayang@gmail.com
 sudo bash acme.sh --issue --standalone -d $SUB_DOMAIN  --force
 sudo bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath
 sude bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --ke$echo Done
