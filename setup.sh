@@ -155,7 +155,7 @@ echo "------------------Script Created By HALUBOY-----------------" | tee -a log
 mv log-install.txt /root
 echo ""
 rm -f setup.sh
+cat /usr/bin/bannerku | lolcat 
 echo " Reboot 15 Sec"
-cat /usr/bin/bannerku | lolcat
 sleep 15
 reboot 
