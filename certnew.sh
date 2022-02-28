@@ -17,4 +17,3 @@ bash acme.sh --installcert -d $domain --fullchainpath
 bash acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --ke$echo Done
 sleep 0.5
 clear
-neofetch
