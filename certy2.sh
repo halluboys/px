@@ -60,9 +60,9 @@ chmod +x /root/.acme.sh/acme.sh
 rm acme.sh
 cd .acme.sh
 echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"          bash acme.sh --register-account -m hammysayang@gmail.com
-bash acme.sh --issue --standalone -d $domain --force
-bash acme.sh --installcert -d $domain --fullchainpath
-bash acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --ke$echo Done
+bash acme.sh --issue --standalone -d $SUB_DOMAIN  --force
+bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath
+bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --ke$echo Done
 service squid start
 systemctl start v2ray
 systemctl start v2ray@none
