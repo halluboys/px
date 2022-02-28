@@ -55,7 +55,7 @@ systemctl stop v2ray
 systemctl stop v2ray@none
 #add certificate
 mkdir /root/.acme.sh
-wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/maste$bash acme.sh --install
+curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh 
 rm acme.sh
 cd .acme.sh
