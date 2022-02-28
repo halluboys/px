@@ -62,7 +62,7 @@ cd .acme.sh
 sudo bash acme.sh --register-account -m hammysayang@gmail.com
 sudo bash acme.sh --issue --standalone -d $SUB_DOMAIN  --force
 sudo bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath
-sudo bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --ke$ 
+sudo bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt 
 service squid start
 systemctl start v2ray
 systemctl start v2ray@none
