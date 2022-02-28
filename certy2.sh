@@ -54,6 +54,11 @@ echo $SUB_DOMAIN > /root/domain
 systemctl stop v2ray
 systemctl stop v2ray@none
 #add certificate
+
+
+mkdir /root/.acme.sh
+
+
 wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/maste$bash acme.sh --install
 rm acme.sh
 cd .acme.sh
