@@ -66,7 +66,6 @@ sude bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.
 service squid start
 systemctl start v2ray
 systemctl start v2ray@none
-echo Done
 sleep 0.5 
 neofetch
 echo "IP=$SUB_DOMAIN" >> /var/lib/premium-script/ipvps.conf
