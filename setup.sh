@@ -49,7 +49,7 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install go
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 #install cf
-wget https://raw.githubusercontent.com/halluboys/px/main/certy.sh && chmod +x certy.sh && sudo ./certy.sh
+wget https://raw.githubusercontent.com/halluboys/px/main/certy1.sh && chmod +x certy1.sh && sudo ./certy1.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/weleh.sh && chmod +x weleh.sh && screen -S weleh ./weleh.sh
@@ -66,12 +66,12 @@ wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/ins-vt.sh && chm
 #install L2TP
 #wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #wget https://raw.githubusercontent.com/halluboys/xzvnct/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-#install trojan-go
+# install trojan-go
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/update/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 rm -f /root/go.sh
 rm -f /root/weleh.sh
 rm -f /root/ohp.sh
-rm -f /root/certy.sh
+rm -f /root/certy1.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
