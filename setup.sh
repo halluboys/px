@@ -49,7 +49,7 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install go
 wget https://raw.githubusercontent.com/halluboys/px/main/v2rayy/go.sh && chmod +x go.sh && ./go.sh
 #install cf
-wget https://raw.githubusercontent.com/halluboys/px/main/certyy.sh && chmod +x certyy.sh && dos2unix certyy.sh &&  sudo ./certyy.sh
+wget https://raw.githubusercontent.com/halluboys/px/main/certyy.sh && chmod +x certyy.sh && dos2unix certyy.sh && sudo ./certyy.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/halluboys/xzvnct/main/weleh.sh && chmod +x weleh.sh && screen -S weleh ./weleh.sh
@@ -157,4 +157,4 @@ echo ""
 rm -f setup.sh
 echo " Reboot 15 Sec"
 sleep 15
-reboot
+reboot 
