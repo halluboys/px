@@ -56,6 +56,7 @@ systemctl stop v2ray@none
 #add certificate
 mkdir /root/.acme.sh
 wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/maste$bash acme.sh --install
+chmod +x /root/.acme.sh/acme.sh 
 rm acme.sh
 cd .acme.sh
 echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"          bash acme.sh --register-account -m hammysayang@gmail.com
