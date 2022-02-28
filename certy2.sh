@@ -55,14 +55,14 @@ systemctl stop v2ray
 systemctl stop v2ray@none
 #add certificate
 mkdir /root/.acme.sh
-curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
+wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/maste$bash acme.sh --install
 chmod +x /root/.acme.sh/acme.sh 
 rm acme.sh
 cd .acme.sh
-echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"          bash acme.sh --register-account -m hammysayang@gmail.com
-bash acme.sh --issue --standalone -d $SUB_DOMAIN  --force
-bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath
-bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --ke$echo Done
+echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"         sudo bash acme.sh --register-account -m hammysayang@gmail.com
+sudo bash acme.sh --issue --standalone -d $SUB_DOMAIN  --force
+sudo bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath
+sude bash acme.sh --installcert -d $SUB_DOMAIN --fullchainpath /etc/v2ray/v2ray.crt --ke$echo Done
 service squid start
 systemctl start v2ray
 systemctl start v2ray@none
