@@ -67,6 +67,5 @@ service squid start
 systemctl start v2ray
 systemctl start v2ray@none
 sleep 0.5 
-neofetch
 echo "IP=$SUB_DOMAIN" >> /var/lib/premium-script/ipvps.conf
 rsync -a /root/domain /etc/v2ray
